@@ -1,0 +1,1 @@
+{"name":"scheme-finder","version":"0.1.0","private":true,"description":"Find government schemes you are likely eligible for (Karnataka)","main":"api/index.js","scripts":{"start":"node src/server.js","test":"node --test tests/"},"engines":{"node":">=18"}}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scheme Finder — Karnataka</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Scheme Finder — Karnataka</h1>
+
+    <p class="notice">Do not type Aadhaar, PAN or bank numbers.</p>
+
+    <form id="finder-form">
+      <label for="situation">Describe your situation in your own words (any language)</label>
+      <textarea id="situation" name="situation" rows="6" required></textarea>
+      <button type="submit" id="find-btn">Find schemes</button>
+    </form>
+
+    <p class="disclaimer">This tool shows schemes you are LIKELY eligible for, based on public information. It does not guarantee any benefit. Final eligibility is decided by the official authority. We do not ask for or store Aadhaar or bank details.</p>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+
+    <section id="understood-section" hidden>
+      <h2>Understood</h2>
+      <ul id="understood"></ul>
+    </section>
+
+    <section id="unclear-section" hidden>
+      <h2>Not found</h2>
+      <ul id="unclear"></ul>
+    </section>
+
+    <section id="results" aria-live="polite"></section>
+
+    <section id="tracker-section">
+      <h2>My tracked schemes</h2>
+      <p class="muted">Saved only in this browser.</p>
+      <ul id="tracked"></ul>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

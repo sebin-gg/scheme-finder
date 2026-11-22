@@ -1,0 +1,29 @@
+{
+ "id": "ayushman-bharat-pmjay",
+ "name": "Ayushman Bharat PM-JAY",
+ "level": "central",
+ "ministry": "Ministry of Health and Family Welfare",
+ "benefit": "Health cover up to Rs 5 lakh per family per year for hospitalisation at empanelled hospitals",
+ "official_url": "https://pmjay.gov.in",
+ "application_url": "https://pmjay.gov.in",
+ "last_verified": null,
+ "verification_note": "Seed data written from public knowledge; confirm rules, amounts and URLs on the official source before relying on them.",
+ "deadline": null,
+ "notes": "Eligibility is decided by the SECC deprivation and occupation criteria.",
+ "rules": [
+  {"id": "income", "field": "annual_income", "op": "lte", "value": 300000, "text": "Annual family income is at or below about Rs 3 lakh (approximation — the official deprivation/occupation list decides)"},
+  {"id": "occupation", "field": "occupation", "op": "in", "value": ["daily_wage", "farm_labour", "unemployed"], "text": "Work is daily wage, farm labour or unemployed category"}
+ ],
+ "documents": [
+  {"name": "Aadhaar (identity only — do not enter the number in this app)"},
+  {"name": "Passport-size photo"},
+  {"name": "Ration card"},
+  {"name": "Income certificate"}
+ ],
+ "steps": [
+  "Check your eligibility on the official portal or with a local service centre",
+  "Carry your Aadhaar and ration card to an empanelled hospital or Ayushman Mitra help desk",
+  "Get your card generated and verified at the desk",
+  "Note the application or card number and keep it for follow-up"
+ ]
+}
